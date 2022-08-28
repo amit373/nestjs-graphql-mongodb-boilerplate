@@ -110,6 +110,4 @@ yarn-error.log
 
 #ENV
 .env
-.env.production
-.env.staging
-.env.local
+.env.*
