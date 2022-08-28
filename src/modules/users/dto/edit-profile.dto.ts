@@ -5,7 +5,7 @@ import { UserInput } from './user.input';
 
 @InputType()
 export class EditProfileInput extends PartialType(
-  PickType(UserInput, ['email', 'password'] as const),
+    PickType(UserInput, ['email', 'password'] as const)
 ) {}
 
 @ObjectType()

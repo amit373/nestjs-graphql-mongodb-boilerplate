@@ -5,7 +5,7 @@ import { UserInput } from './user.input';
 
 @InputType()
 export class ResetPasswordInput extends PartialType(
-  PickType(UserInput, ['password', 'resetPasswordToken'] as const),
+    PickType(UserInput, ['password', 'resetPasswordToken'] as const)
 ) {}
 
 @ObjectType()

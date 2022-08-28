@@ -3,7 +3,7 @@ import { JwtService } from '.';
 
 @Global()
 @Module({
-  exports: [JwtService],
-  providers: [JwtService],
+    exports: [JwtService],
+    providers: [JwtService],
 })
 export class JwtModule {}

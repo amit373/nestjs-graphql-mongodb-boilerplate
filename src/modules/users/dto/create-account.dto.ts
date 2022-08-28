@@ -5,9 +5,9 @@ import { UserInput } from './user.input';
 
 @InputType()
 export class CreateAccountInput extends PickType(UserInput, [
-  'name',
-  'email',
-  'password',
+    'name',
+    'email',
+    'password',
 ] as const) {}
 
 @ObjectType()

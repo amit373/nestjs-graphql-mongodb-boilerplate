@@ -7,12 +7,14 @@ import { UsersResolver } from './users.resolver';
 import { userSchema, userSchemaName } from './schema/user.schema';
 
 @Module({
-  imports: [
-    MongooseModule.forFeature([{ name: userSchemaName, schema: userSchema }]),
-    JwtModule,
-    EmailModule,
-  ],
-  providers: [UsersResolver, UsersService],
-  exports: [UsersService],
+    imports: [
+        MongooseModule.forFeature([
+            { name: userSchemaName, schema: userSchema },
+        ]),
+        JwtModule,
+        EmailModule,
+    ],
+    providers: [UsersResolver, UsersService],
+    exports: [UsersService],
 })
 export class UsersModule {}
