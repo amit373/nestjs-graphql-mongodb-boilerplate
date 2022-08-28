@@ -4,3 +4,4 @@ export * from './logger.interfaces';
 export * from './logger.module';
 export * from './logger.utilities';
 export * from './logger-config.service';
+export * from './logger.service';

@@ -11,6 +11,7 @@ import {
     LoggerModuleOptionsFactory,
 } from './logger.interfaces';
 import { WinstonLogger } from './logger.classes';
+import { LoggerService } from './logger.service';
 
 export function createWinstonLogger(
     loggerOpts: LoggerModuleOptions

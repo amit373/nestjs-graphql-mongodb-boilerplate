@@ -90,7 +90,7 @@ const nestLikeConsoleFormat = (
 
         const _appName: string = color(`[${appName}]`) + ' ';
 
-        const getContext = () => {
+        const getContext = (): string => {
             const truthyValues = getValidValues(context);
             if (truthyValues?.isValidString === null) {
                 return '';
