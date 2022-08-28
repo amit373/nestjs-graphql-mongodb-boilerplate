@@ -5,7 +5,7 @@ import { UserInput } from './user.input';
 
 @InputType()
 export class VerifyEmailInput extends PickType(UserInput, [
-  'resetPasswordToken',
+    'resetPasswordToken',
 ] as const) {}
 
 @ObjectType()

@@ -4,3 +4,4 @@ export * from './bcrypt';
 export * from './dto';
 export * from './email';
 export * from './types';
+export * from './logger';

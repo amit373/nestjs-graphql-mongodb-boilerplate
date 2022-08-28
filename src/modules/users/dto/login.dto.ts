@@ -5,12 +5,12 @@ import { UserInput } from './user.input';
 
 @InputType()
 export class LoginInput extends PickType(UserInput, [
-  'email',
-  'password',
+    'email',
+    'password',
 ] as const) {}
 
 @ObjectType()
 export class LoginOutput extends CoreOutput {
-  @Field(() => String, { nullable: true })
-  token?: string;
+    @Field(() => String, { nullable: true })
+    token?: string;
 }

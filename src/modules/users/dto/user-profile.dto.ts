@@ -5,6 +5,6 @@ import { User } from '../schema';
 
 @ObjectType()
 export class UserProfileOutput extends CoreOutput {
-  @Field(() => User, { nullable: true })
-  user?: User;
+    @Field(() => User, { nullable: true })
+    user?: User;
 }
