@@ -11,7 +11,7 @@ import {
     ThrottlerConfigService,
 } from '@app/common';
 import { GqlConfigService, MongooseConfigService } from '@app/services';
-import { HealthModule, UsersModule } from '@app/modules';
+import { HealthModule, SeedsModule, UsersModule } from '@app/modules';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import config from '@app/config';
@@ -33,6 +33,7 @@ import config from '@app/config';
         ThrottlerModule.forRootAsync({ useClass: ThrottlerConfigService }),
         UsersModule,
         HealthModule,
+        SeedsModule,
     ],
     controllers: [AppController],
     providers: [AppService],
